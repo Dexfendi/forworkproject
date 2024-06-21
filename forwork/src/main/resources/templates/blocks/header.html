@@ -1,0 +1,33 @@
+<div th:fragment="header">
+    <header class="d-flex flex-wrap align-items-center justify-content-between py-3 mb-4 border-bottom fixed-top bg-white">
+        <div class="col-md-3 mb-2 mb-md-0">
+            <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                <span class="fs-4">Simple header</span>
+                <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+        </div>
+
+        <div class="col-md-6">
+            <ul class="nav nav-pills justify-content-center">
+                <li class="nav-item"><a href="/" class="nav-link">Головна сторінка</a></li>
+                <li class="nav-item"><a href="/publication" class="nav-link">Публікації</a></li>
+                <li class="nav-item"><a href="/publication/add" class="nav-link">Створити публікацію</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Про нас</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-3 d-flex justify-content-end align-items-center">
+            <form action="/" method="get" class="form-inline d-flex me-2">
+                <input type="text" name="title" class="form-control me-2" placeholder="Пошук">
+                <button type="submit" class="btn btn-outline-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                </button>
+            </form>
+            <button type="button" class="btn btn-outline-primary me-2">Login</button>
+            <button type="button" class="btn btn-outline-primary">Sign up</button>
+        </div>
+    </header>
+</div>
